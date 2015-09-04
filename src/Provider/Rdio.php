@@ -37,8 +37,9 @@ class Rdio extends AbstractProvider
     protected function checkResponse(ResponseInterface $response, $data)
     {
         if ($response->getStatusCode() >= 400) {
+            $msg = $data['error_description'] ?: (string)$response->getReasonPhrase();
             throw new IdentityProviderException(
-                $data['error_description'] ?: $response->getReasonPhrase(),
+                $msg,
                 $response->getStatusCode(),
                 $response
             );
