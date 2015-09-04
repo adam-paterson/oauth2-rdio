@@ -4,18 +4,20 @@
 namespace AdamPaterson\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\GenericResourceOwner;
+use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 
-class RdioResourceOwner extends GenericResourceOwner
+class RdioResourceOwner implements ResourceOwnerInterface
 {
+    protected $response;
 
-    public function __construct(array $response)
+    public function __construct(array $response = array())
     {
-        parent::__construct($response, 'key');
+        $this->response = $response;
     }
 
     public function getId()
     {
-        return $this->response['result'][$this->resourceOwnerId];
+        return $this->response['result']['key'];
     }
 
     public function getFirstName()
@@ -76,5 +78,10 @@ class RdioResourceOwner extends GenericResourceOwner
     public function getIcon()
     {
         return $this->response['result']['icon'];
+    }
+
+    public function toArray()
+    {
+        return $this->response;
     }
 }
