@@ -26,7 +26,7 @@ class Rdio extends AbstractProvider
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://services.rdio.com/api/1/?method=currentUser';
+        return 'https://www.yammer.com/api/v1/users/current.json';
     }
 
     protected function getDefaultScopes()

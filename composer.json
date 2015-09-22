@@ -1,6 +1,18 @@
 {
     "name": "adam-paterson/oauth2-rdio",
-    "description": "",
+    "description": "Imgur OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "authorization",
+        "authentication",
+        "idp",
+        "identity",
+        "sso",
+        "single sign on",
+        "rdio",
+        "rdio api"
+    ],
     "license": "MIT",
     "authors": [
         {
