@@ -4,7 +4,8 @@
 [![Build Status](https://img.shields.io/travis/adam-paterson/oauth2-rdio/master.svg?style=flat-square)](https://travis-ci.org/adam-paterson/oauth2-rdio)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/adam-paterson/oauth2-rdio.svg?style=flat-square)](https://scrutinizer-ci.com/g/adam-paterson/oauth2-rdio/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/adam-paterson/oauth2-rdio.svg?style=flat-square)](https://scrutinizer-ci.com/g/adam-paterson/oauth2-rdio)
-[![Total Downloads](https://img.shields.io/packagist/dt/league/oauth2-rdio.svg?style=flat-square)](https://packagist.org/packages/adam-paterson/oauth2-rdio)
+[![Dependency Status](https://img.shields.io/versioneye/d/php/adam-paterson:oauth2-rdio/1.0.1.svg?style=flat-square)](https://www.versioneye.com/php/adam-paterson:oauth2-rdio/1.0.1)
+[![Total Downloads](https://img.shields.io/packagist/dt/adam-paterson/oauth2-rdio.svg?style=flat-square)](https://packagist.org/packages/adam-paterson/oauth2-rdio)
 
 This package provides Rdio OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
 
